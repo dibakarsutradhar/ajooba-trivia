@@ -1,3 +1,19 @@
 body {
-  background-color: yellow;
+  background-color: #ffbd59;
+}
+
+.Title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  font-weight: bolder;
+  position: relative;
+  text-align: center;
+  margin-top: 22%;
+}
+
+span {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  position: relative;
+  text-align: center;
 }
