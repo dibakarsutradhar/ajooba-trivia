@@ -1,14 +1,11 @@
-import React, { Fragment } from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-const tempHome = () => (
-    <Fragment>
-        <Helmet><title>Ajooba Trivia - Home</title></Helmet>
-        <div id="home">
-            
-        </div>
-    </Fragment>
-    );
+
+const tempHome = () => {
+    return (
+        <div className="logo">
+      </div>
+    )
+}
 
 export default tempHome;
