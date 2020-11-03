@@ -10,6 +10,10 @@
 body {
   margin: 0;
   padding:0;
+  min-height: 100vh;
+}
+.main {
+  min-height: calc(100vh - 41px);
 }
 
 .container-fluid {
@@ -238,6 +242,9 @@ h4 {
 
 .txt-center {
   text-align: center;
+}
+.txt-justify {
+  text-align: justify;
 }
 
 p, li {
