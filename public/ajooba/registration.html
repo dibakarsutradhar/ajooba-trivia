@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta tags-->
+	<meta charset="utf-8">
+	<meta name="description" content="Page description">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Ajooba Trivia</title>
+	<link rel="icon" type="image/png" href="images/favicon.png"> <!--favicon-->
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Import Google Icon Font-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"  media="screen,projection"/> xImport materialize.css-->
+
+
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!--font awesome icons-->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!--stylesheet-->
+		<!--Please ensure that you have a working internet connection while reviewing this website otherwise some elements may not display or work properly-->
+</head>
+<body class="subpage">
+  <!--main header-->
+	<header >
+  <nav>
+      <div class="nav-wrapper container-fluid">
+
+
+          <a href="home.html" class="breadcrumb">Home</a>
+          <a href="registration.html" class="breadcrumb txt-bold">Register</a>
+
+
+
+          <ul class="social-media right">
+            <li>Follow Us: </li>
+            <li><a href="https://www.instagram.com/ajoobatrivia/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul> <!--social media icons-->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+      </div>
+  </nav>
+
+</header> <!--Main navigation bar-->
+  <section class="banner-img valign-wrapper ">
+    <div class="banner-title">
+      <img src="images/banner-title.png" alt="Ajooba Trivia" class=""> <!--banner logo-->
+    </div>
+  </section> <!--main banner end-->
+  <main class="container">
+    <section class="row">
+      <div class="col s12">
+        <h3 class="txt-center">Register</h3>
+        <div class="card margin-auto" style="max-width:600px;">
+					<div class="card-content">
+						<form method="post" class="row">
+							<div class="input-field col  s12 margin-bottom-0">
+			          			<input id="person_name" type="text" class="validate">
+			          			<label for="person_name">Full Name</label>
+			        		</div>
+			        		<div class="input-field col l6 s12 margin-bottom-0">
+			          			<input id="email_add" type="email" class="validate">
+		          				<label for="email_add">Email</label>
+			        		</div>
+			        		<div class="input-field col l6 s12 margin-bottom-0">
+		          			<input id="conf_email" type="text" class="validate">
+		          			<label for="conf_email">Confirm Email</label>
+		          		</div>
+                    <div class="col l6 s12 margin-bottom-0 margin-top-10">
+                      <p>Are you a SEGi Student?</p>
+
+                      <p class="padding-top-5">
+                        <label class="margin-right-20">
+                          <input name="group1" type="radio"  value ="yes"/>
+                          <span>Yes</span>
+                        </label>
+                        <label>
+                          <input name="group1" type="radio" value="no" />
+                          <span>No</span>
+                        </label>
+                      </p>
+
+                    </div>
+                    <!--add condition-->
+                    <div class="input-field col l6 s12 margin-bottom-0">
+  		          			<input id="st_id" type="text" class="validate">
+  		          			<label for="st_id">Student ID</label>
+  		          		</div>
+
+
+		        			<div class="input-field col s12 margin-bottom-0 txt-center">
+		        				<button class="btn waves-effect waves-light modal-trigger btn-yellow " data-target="contact-model" type="submit" name="action">Submit<i class="material-icons right">send</i>
+		  						</button> <!--triggers model-->
+		        			</div>
+						</form> <!--contact form end-->
+					</div><!--card-content div close-->
+				</div><!--card div close-->
+
+      </div>
+
+    </section>
+  </main>
+  <!--JavaScript at end of body for optimized loading-->
+ 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>

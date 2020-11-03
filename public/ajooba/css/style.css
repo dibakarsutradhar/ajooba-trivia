@@ -60,6 +60,11 @@ nav  .btn i {
   line-height: 35px;
 }
 
+.breadcrumb , .breadcrumb:before{
+  color: rgba(0,0,0,0.7);
+}
+
+
 /*----banner ----*/
 .banner-img {
   width:100%;
@@ -67,11 +72,13 @@ nav  .btn i {
   position:   relative;
  /* object-fit: cover;
   object-position: center;*/
-  background: url("../images/banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: center right;
+  background: url("../images/pattern.png") repeat;
+  background-size: contain;
+  background-color: #febd59;
+  background-position: center ;
   background-attachment: fixed;
 }
+
 .calltoaction, .banner-title {
   width:100%;
   display: block;
@@ -80,7 +87,7 @@ nav  .btn i {
 .banner-img .banner-title img{
   display: block;
   margin:0 auto;
-  padding:  30px;
+  padding:  40px;
   width:  70vw; /*vertical width*/
   max-width:  800px
 }
@@ -90,7 +97,6 @@ nav  .btn i {
   width: 300px;
 }
 .banner-img .calltoaction a.btn:hover {
-
   background: #fff;
   color: #ffbd59;
 }
@@ -99,9 +105,18 @@ nav  .btn i {
     position:   absolute;
     bottom: 20px;
     left:calc(50% - 20px);
+}
+/*subpage banner*/
+.subpage .banner-img {
+  background-attachment: scroll;
 
 }
-
+.subpage .banner-img , .subpage .banner-img .banner-title, .subpage .banner-img .banner-title img{
+  height: 30vh;
+}
+.subpage .banner-img .banner-title img {
+  width: auto;
+}
 
 /*----footer----*/
 
@@ -158,6 +173,9 @@ h4 {
 
 /*margins*/
 
+.margin-auto {
+  margin: 0 auto;
+}
 .margin-0 {
   margin:0;
 }
@@ -214,6 +232,17 @@ h4 {
   font-weight:  bold;
 }
 
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+
+.txt-center {
+  text-align: center;
+}
+
 p, li {
   font-size: 16px;
   line-height: 24px;
@@ -239,16 +268,21 @@ ol li::marker {
 
 /*button style*/
 
+.btn {
+  font-weight: bold;
+  font-size: 17px;
+  height: auto;
+}
+
 .btn-border{
   width: 100%;
   height: 60px;
   margin-bottom: 20px;
-  background: transparent;
+  background-color: transparent !important;
   line-height: 60px;
   font-size: 21px;
-  font-weight: bold;
 }
-.btn-border:hover, .btn-border {
+.btn-border:hover, .btn-border, .btn , .btn:hover{
   box-shadow: none;
 }
 .btn-border-white {
@@ -266,6 +300,14 @@ ol li::marker {
 .btn-border-yellow:hover, .btn-border-yellow:active , .btn-border-yellow:focus{
   background: #febd59;
   color: #fff;
+}
+.btn-yellow {
+  padding: 5px 50px;
+  background: #febd59;
+  color: #fff;
+}
+.btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus {
+  background: #de9321;
 }
 
 main {
@@ -358,7 +400,11 @@ aside .social-media li a i {
   filter: grayscale(100%);
 }
 
-
+/*forms elements*/
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+  padding-left: 25px;
+    margin-right: 15px;
+}
 
 #mobile-demo.sidenav {
   z-index:  9999999;
