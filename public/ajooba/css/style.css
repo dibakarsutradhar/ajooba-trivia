@@ -13,7 +13,7 @@ body {
 }
 
 .container-fluid {
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 /*---header bar ---*/
@@ -107,7 +107,7 @@ nav  .btn i {
 
 footer {
   padding:10px;
-  background:#0f0f0f;
+  background:#1f1f1f;
   color: #fff;
   font-weight: 500;
   font-size:14px;
@@ -130,11 +130,11 @@ footer {
 /*--------General Style---------*/
 
 h3, h4 {
-      font-weight: 600;
+    font-weight: 600;
     text-transform: uppercase;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
-    color: #4b4a58;
+    color: #febd59;
     font-size: 38px;
 }
 
@@ -198,8 +198,12 @@ h4 {
 p, li {
   font-size: 16px;
   line-height: 24px;
-  color:#fff;
+  color:#1f1f1f;
   text-align: justify;
+}
+
+aside p, aside li {
+  color:#fff;
 }
 
 ul.list-bullet {
@@ -242,7 +246,8 @@ ul.list-bullet > li {
 }
 
 main {
-    background: #211f1f;
+  /*  background: #211f1f; */
+
 }
 
 aside {
@@ -280,6 +285,29 @@ aside .social-media li  {
 aside .social-media li a i {
   font-size: 25px;
 }
+
+/*About Us Style*/
+
+.team-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.team-flex .cont {
+  width:calc(20% - 30px);
+  max-width: 300px;
+  min-width: 150px;
+  margin:15px;
+}
+
+.team-flex .cont img {
+  width:100%;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 
 
 #mobile-demo.sidenav {
