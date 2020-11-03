@@ -169,6 +169,18 @@ h4 {
 .margin-top-20 {
   margin-top:20px;
 }
+.margin-bottom-10 {
+  margin-bottom:10px;
+}
+.margin-bottom-15 {
+  margin-bottom:15px;
+}
+.margin-bottom-20 {
+  margin-bottom:20px;
+}
+.margin-bottom-25 {
+  margin-bottom:25px;
+}
 
 /*paddings*/
 .padding-top-5 {
@@ -177,6 +189,13 @@ h4 {
 
 .padding-top-10 {
   padding-top: 10px;
+}
+.padding-tb-20 {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.padding-20 {
+  padding:20px;
 }
 /*typography*/
 
@@ -212,6 +231,10 @@ ul.list-bullet {
 
 ul.list-bullet > li {
   list-style-type: square;
+}
+ol li::marker {
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 /*button style*/
@@ -286,6 +309,33 @@ aside .social-media li a i {
   font-size: 25px;
 }
 
+/*rules style*/
+.card {
+ border:  1px solid #ddd;
+}
+.icon-number {
+  padding: 7px 11px;
+    margin-right: 10px;
+    /* background: #000; */
+    border-radius: 50%;
+    width: 50px;
+    height: 20px;
+    color: #febd59;
+    border: 2px solid;
+    font-weight: bold;
+}
+/*FAQ Style */
+.collapsible, .card {
+  -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.collapsible .active .collapsible-header{
+  background: #eee;
+}
+.collapsible .active .collapsible-body{
+  background: #f9f9f9;
+}
 /*About Us Style*/
 
 .team-flex {
