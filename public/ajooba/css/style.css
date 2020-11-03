@@ -96,10 +96,7 @@ nav  .btn i {
   top: -50px;
   width: 300px;
 }
-.banner-img .calltoaction a.btn:hover {
-  background: #fff;
-  color: #ffbd59;
-}
+
 
 .banner-img .btn-floating{
     position:   absolute;
@@ -278,7 +275,7 @@ ol li::marker {
   width: 100%;
   height: 60px;
   margin-bottom: 20px;
-  background-color: transparent !important;
+  background-color: transparent ;
   line-height: 60px;
   font-size: 21px;
 }
@@ -400,11 +397,39 @@ aside .social-media li a i {
   filter: grayscale(100%);
 }
 
-/*forms elements*/
+/*----------forms elements-----------*/
+
+/*radio button*/
 [type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
   padding-left: 25px;
     margin-right: 15px;
 }
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after, [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  background:  #febd59;
+  border-color: #febd59;
+}
+
+/*input fields*/
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly])
+  {
+    border-bottom: 1px solid #febd59;
+    -webkit-box-shadow: 0 1px 0 0 #febd59;
+    box-shadow: 0 1px 0 0 #febd59;
+  }
+
+  input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:not(.browser-default), input.valid[type=text]:not(.browser-default):focus, input.valid[type=password]:not(.browser-default), input.valid[type=password]:not(.browser-default):focus, input.valid[type=email]:not(.browser-default), input.valid[type=email]:not(.browser-default):focus, input.valid[type=url]:not(.browser-default), input.valid[type=url]:not(.browser-default):focus, input.valid[type=time]:not(.browser-default), input.valid[type=time]:not(.browser-default):focus, input.valid[type=date]:not(.browser-default), input.valid[type=date]:not(.browser-default):focus, input.valid[type=datetime]:not(.browser-default), input.valid[type=datetime]:not(.browser-default):focus, input.valid[type=datetime-local]:not(.browser-default), input.valid[type=datetime-local]:not(.browser-default):focus, input.valid[type=tel]:not(.browser-default), input.valid[type=tel]:not(.browser-default):focus, input.valid[type=number]:not(.browser-default), input.valid[type=number]:not(.browser-default):focus, input.valid[type=search]:not(.browser-default), input.valid[type=search]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown
+  {
+    border-bottom: 1px solid #000;
+    -webkit-box-shadow: 0 1px 0 0 #000;
+    box-shadow: 0 1px 0 0 #000;
+
+  }
+
+  .input-field>label.active, input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label
+  {
+      color: #000;
+  }
+
 
 #mobile-demo.sidenav {
   z-index:  9999999;
