@@ -34,6 +34,9 @@ nav {
 
   z-index: 9999;
 }
+nav.mobile.social-display {
+  display:none;
+}
 
 nav .social-media li{
     color: #000;
@@ -93,7 +96,6 @@ nav  .btn i {
   text-align: center;
 }
 .banner-img .banner-title img{
-  display: block;
   margin:0 auto;
   padding:  40px;
   width:  70vw; /*vertical width*/
@@ -114,15 +116,16 @@ nav  .btn i {
 /*subpage banner*/
 .subpage .banner-img {
   background-attachment: scroll;
-
 }
 .subpage .banner-img ,
 .subpage .banner-img .banner-title,
 .subpage .banner-img .banner-title img{
-  height: 30vh;
+  height: auto;
 }
 .subpage .banner-img .banner-title img {
-  width: auto;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 600px;
 }
 
 /*----footer----*/
@@ -522,5 +525,16 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   .banner-img .calltoaction a {
     width: 70vw;
     max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .social-media.mobile {
+    display: none;
+  }
+  nav.mobile.social-display {
+    display: block;
+    position: static;
+    padding: 0 20px;
   }
 }
