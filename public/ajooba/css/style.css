@@ -158,12 +158,8 @@ h3, h4 {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     color: #febd59;
-    font-size: 38px;
 }
 
-h4 {
-  font-size: 34px;
-}
 
 /*position, display styles*/
 
@@ -209,6 +205,9 @@ h4 {
 }
 
 /*paddings*/
+.padding-0 {
+  padding:0 !important;
+}
 .padding-top-5 {
   padding-top: 5px;
 }
@@ -458,6 +457,14 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   z-index:  9999999;
 }
 
+.sticky-registration {
+  position: sticky;
+  bottom: 0;
+  background: black;
+}
+.sticky-registration .btn {
+  margin: 15px 0;
+}
 
 /*-----------responsive style----------------*/
 @media screen and (max-width: 1024px) {
@@ -465,10 +472,13 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     width: 250px;
   }
 
-}
-@media screen and (max-width: 1024px) {
   .container-fluid {
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .flex {
+    display:  block;
   }
 }
 
@@ -489,10 +499,13 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     font-size: 17px;
   }
 }
-@media screen and (max-width: 600px){
-  .flex {
-    display:  block;
+@media screen and (min-width:600px){
+  .sticky-registration .btn {
+    max-width:300px;
   }
+}
+@media screen and (max-width: 600px){
+
   .banner-title {
     padding: 25px;
   }

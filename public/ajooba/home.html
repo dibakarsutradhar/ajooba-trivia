@@ -27,12 +27,9 @@
 		      	<ul class="social-media">
 		      		<li>Follow Us: </li>
               <li><a href="https://www.instagram.com/ajoobatrivia/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul> <!--social media icons-->
-
+            </ul> <!--social media icon-->
 		    </div>
 		</nav>
-
-
 	</header> <!--Main navigation bar-->
   <!--main banner -->
 	<section class="banner-img valign-wrapper">
@@ -43,17 +40,18 @@
         <a href="registration.html" class="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</a>
       </div>
     </div>
-		<a class="btn-floating black pulse " href="#howToPlay"><i class="material-icons">arrow_drop_down</i></a>
+		<a class="btn-floating black pulse " href="#howToPlay"><i class="material-icons">arrow_downward</i></a>
 	</section> <!--main banner end-->
+
+	<!--Information content -->
 	<section>
 		<div class="row flex margin-0">
-	      <main class=" col s12 l9 m8">
-	      	<div class="container-fluid">
+	      <main class="padding-0 col s12 l9">
             <!--How To Play-->
-	      		<section id="howToPlay" class="section scrollspy ">
+	      		<section id="howToPlay" class="section container-fluid scrollspy ">
               <div class="row">
                 <div class="col s12">
-                  <h3>How To Play</h3>
+                  <h4>How To Play</h4>
                   <!-- How To Play with step by step breakdown-->
                   <div class="card padding-20">
 
@@ -89,12 +87,11 @@
                 </div>
               </div>
 		      	</section> <!--How To Play end-->
-
             <!--Rules-->
-		      	<section id="rules" class="section scrollspy ">
+		      	<section id="rules" class="section container-fluid scrollspy ">
 		      		<div class="row">
 		      			<div class="col s12">
-			      			<h3>Rules and Regulations</h3>
+			      			<h4>Rules and Regulations</h4>
                   <div class="card padding-tb-20">
                       <ol>
                         <li>Lorem ipsum dolor sit amet.</li>
@@ -106,10 +103,11 @@
 			      		</div>
 			      	</div>
 		      	</section> <!--rules section end-->
-		      	<section id="faq" class="section scrollspy">
+						<!--FAQ-->
+		      	<section id="faq" class="section container-fluid scrollspy">
 		      		<div class="row">
 		      			<div class="col s12">
-		      				<h3>Frequently Asked Questions (FAQs)</h3>
+		      				<h4>Frequently Asked Questions (FAQs)</h4>
 		      			</div>
 		      			<div class="col s12">
                   <ul class="collapsible">
@@ -129,10 +127,11 @@
 		      			</div>
 		      		</div>
 		      	</section> <!--FAQ section end-->
-		      	<section id="about" class="section scrollspy row">
+						<!--About-->
+		      	<section id="about" class="section container-fluid scrollspy ">
           			<div class="row">
           				<div class="col s12">
-          					<h3 class="section-title">About Us</h3>
+          					<h4 class="section-title">About Us</h4>
           					<p>Ajooba Trivia is a fun and interactive trivia game organized by Bachelor's of IT (hons) students taking the MPU 3342 - Pengurusan Kokurikulum course from the Faculty of Engineering, Built Environment and Information Technology in SEGi University. It is a friendly event with the main purpose to educate and stimulate minds while having fun with your peers.</p>
 
           				</div>
@@ -191,19 +190,24 @@
           				</div>
           		</div><!--team-flex div-->
 		      	</section> <!--about section end-->
-	      	</div> <!--end of container-->
+						<!--sticky registration button - only visible on medium devices and below-->
+						<section class="sticky-registration container-fluid hide-on-large-only txt-center">
+							<a href="registration.html" class="btn btn-large btn-border btn-border-yellow">Register</a>
+						</section>
         </main>
-        <!--side menu-->
-	      <aside class="col m3 l3 s12	" >
-	      		<div class="sticky-object">
-	      			<ul class=" hide-on-med-and-down section table-of-contents" >
-				        <li><a href="#howToPlay">How To Play</a></li>
-				        <li><a href="#rules">Rules</a></li>
-				        <li><a href="#faq">FAQ</a></li>
-				        <li><a href="#about">About Us</a></li>
-			      	</ul>
-              <a href="registration.html" class="btn btn-large btn-border btn-border-yellow">Register</a>
 
+        <!--side menu  (desktops and large devices)-->
+	      <aside class="col  l3 s12	" >
+	      		<div class="sticky-object">
+							<div class="hide-on-med-and-down">
+								<ul class="  section table-of-contents" >
+					        <li><a href="#howToPlay">How To Play</a></li>
+					        <li><a href="#rules">Rules</a></li>
+					        <li><a href="#faq">FAQ</a></li>
+					        <li><a href="#about">About Us</a></li>
+				      	</ul>
+								  <a href="registration.html" class="btn btn-large btn-border btn-border-yellow margin-top-20">Register</a>
+							</div>
 		    		  	<div class="card ">
 				        <div class="card-content ">
 				          <span class="card-title">Contact Us:</span>
@@ -221,11 +225,7 @@
 			               </ul> <!--social media icons-->
 				        </div>
 				      </div>
-
 	      		</div>
-
-
-
 	      </aside>
 
 	    </div>
