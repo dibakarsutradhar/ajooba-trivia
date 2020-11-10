@@ -37,6 +37,17 @@ nav {
 nav.mobile.social-display {
   display:none;
 }
+.progress {
+  height: 6px;
+   background-color: #fde9ca;
+}
+.progress .determinate {
+
+   background-color: #febd59;
+}
+label {
+      color: #5f5656;
+}
 
 nav .social-media li{
     color: #000;
